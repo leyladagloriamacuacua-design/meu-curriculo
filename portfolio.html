@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio — Leyla da Glória Macuácua</title>
+  <meta name="description" content="Projetos e trabalhos desenvolvidos por Leyla da Glória Macuácua.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">leyla_macuacua<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html">index.html</a></li>
+          <li><a href="about.html">about.html</a></li>
+          <li><a href="portfolio.html" class="activo" aria-current="page">portfolio.html</a></li>
+          <li><a href="hobbies.html">hobbies.html</a></li>
+          <li><a href="contact.html">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="seccao container">
+      <span class="rotulo-comentario">// projetos</span>
+      <h1>Portfólio</h1>
+      <p>Uma seleção de projetos académicos e pessoais. A grelha abaixo é construída com <strong>CSS Grid</strong>.</p>
+    </section>
+
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <div class="grelha-projetos">
+
+          <article class="cartao">
+            <img src="assets/img/projeto-logica.jpg" alt="Captura de ecrã do código-fonte do projeto de lógica estruturada em C++" width="400" height="240">
+            <div class="cartao__corpo">
+              <h3>Lógica Estruturada em C++</h3>
+              <p>Conjunto de exercícios e programas em C++ para praticar lógica de programação estruturada: variáveis, condições, ciclos e funções.</p>
+              <span class="cartao__tag">C++</span>
+              <span class="cartao__tag">Lógica de Programação</span>
+              <p><a href="https://github.com/leyladagloriamacuacua-design/TESTE1_CPP_LOGICA_ESTRUTURADA.git" target="_blank" rel="noopener">Ver repositório <i class="fa-brands fa-github" aria-hidden="true"></i></a></p>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img src="assets/img/projeto-lab1.jpg" alt="Captura de ecrã do trabalho prático de laboratório" width="400" height="240">
+            <div class="cartao__corpo">
+              <h3>Trabalho de Laboratório</h3>
+              <p>Trabalho prático desenvolvido nas aulas de laboratório do curso, aplicando os conceitos estudados na disciplina.</p>
+              <span class="cartao__tag">Laboratório</span>
+              <span class="cartao__tag">Académico</span>
+              <p><a href="https://github.com/leyladagloriamacuacua-design/Trabalho-De-_LAB.git" target="_blank" rel="noopener">Ver repositório <i class="fa-brands fa-github" aria-hidden="true"></i></a></p>
+            </div>
+          </article>
+
+          <article class="cartao">
+            <img src="assets/img/projeto-lab-final.jpg" alt="Captura de ecrã do projeto final de laboratório" width="400" height="240">
+            <div class="cartao__corpo">
+              <h3>Projecto Final de Laboratório</h3>
+              <p>Projeto final que reúne e consolida os conhecimentos práticos desenvolvidos ao longo das aulas de laboratório.</p>
+              <span class="cartao__tag">Laboratório</span>
+              <span class="cartao__tag">Projeto Final</span>
+              <p><a href="https://github.com/leyladagloriamacuacua-design/Projecto_final_LAB.git" target="_blank" rel="noopener">Ver repositório <i class="fa-brands fa-github" aria-hidden="true"></i></a></p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> leyladagloriamacuacua@gmail.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 84 724 3782 / 87 872 4378</p>
+      </address>
+      <ul class="rodape__redes">
+        <li><a href="https://github.com/leyladagloriamacuacua-design" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Leyla da Glória Macuácua &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

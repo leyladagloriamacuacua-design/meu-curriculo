@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies &amp; Interesses — Leyla da Glória Macuácua</title>
+  <meta name="description" content="Hobbies e interesses pessoais de Leyla da Glória Macuácua.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">leyla_macuacua<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html">index.html</a></li>
+          <li><a href="about.html">about.html</a></li>
+          <li><a href="portfolio.html">portfolio.html</a></li>
+          <li><a href="hobbies.html" class="activo" aria-current="page">hobbies.html</a></li>
+          <li><a href="contact.html">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="seccao container">
+      <span class="rotulo-comentario">// tempos livres</span>
+      <h1>Hobbies &amp; Interesses</h1>
+      <p>Fora do código, é assim que costumo ocupar o meu tempo. Os blocos abaixo usam <strong>Flexbox</strong>.</p>
+    </section>
+
+    <!-- flex-direction: row (desktop) / column (mobile) + wrap + justify-content: space-between -->
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <span class="rotulo-comentario">/* flex-direction, flex-wrap, justify-content: space-between */</span>
+        <div class="flex-linha" style="justify-content: space-between;">
+
+          <article class="cartao flex-item">
+            <div class="cartao__corpo">
+              <h3><i class="fa-solid fa-utensils" aria-hidden="true"></i> Encomendas de salgados</h3>
+              <p>Preparo e vendo salgados por encomenda, gerindo pedidos e atendimento aos clientes.</p>
+            </div>
+          </article>
+
+          <article class="cartao flex-item">
+            <div class="cartao__corpo">
+              <h3><i class="fa-brands fa-tiktok" aria-hidden="true"></i> Vídeos no TikTok</h3>
+              <p>Crio e edito pequenos vídeos para partilhar no TikTok.</p>
+            </div>
+          </article>
+
+          <article class="cartao flex-item">
+            <div class="cartao__corpo">
+              <h3><i class="fa-solid fa-camera" aria-hidden="true"></i> Fotografia</h3>
+              <p>Gosto de fotografar momentos do dia a dia e explorar diferentes ângulos e luz.</p>
+            </div>
+          </article>
+
+          <article class="cartao flex-item">
+            <div class="cartao__corpo">
+              <h3><i class="fa-solid fa-music" aria-hidden="true"></i> Música</h3>
+              <p>Gosto de ouvir e descobrir música nos tempos livres.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- align-items: center + justify-content: center, para contraste com a secção anterior -->
+    <section class="seccao">
+      <div class="container">
+        <span class="rotulo-comentario">/* align-items: center, justify-content: center */</span>
+        <h2>Outras atividades</h2>
+        <div class="flex-linha" style="justify-content: center; align-items: center; text-align: center;">
+
+          <article class="cartao flex-item" style="flex-basis: 220px;">
+            <div class="cartao__corpo">
+              <h3><i class="fa-solid fa-blender" aria-hidden="true"></i> Culinária</h3>
+              <p>Experimentar novas receitas, além dos salgados que já faço por encomenda.</p>
+            </div>
+          </article>
+
+          <article class="cartao flex-item" style="flex-basis: 220px;">
+            <div class="cartao__corpo">
+              <h3><i class="fa-solid fa-video" aria-hidden="true"></i> Edição de vídeo</h3>
+              <p>Editar os vídeos que gravo para o TikTok, cuidando do corte e do ritmo.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> leyladagloriamacuacua@gmail.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 84 724 3782 / 87 872 4378</p>
+      </address>
+      <ul class="rodape__redes">
+        <li><a href="https://github.com/leyladagloriamacuacua-design" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Leyla da Glória Macuácua &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

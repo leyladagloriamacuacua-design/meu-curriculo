@@ -1,0 +1,5 @@
+Coloque aqui o seu ficheiro de áudio de apresentação, com estes nomes:
+- apresentacao.mp3
+- apresentacao.ogg (opcional)
+
+Referenciado em index.html através da tag <audio>.

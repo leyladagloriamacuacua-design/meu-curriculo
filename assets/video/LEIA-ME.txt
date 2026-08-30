@@ -1,0 +1,5 @@
+Coloque aqui o seu vídeo de apresentação (poucos segundos), com estes nomes:
+- apresentacao.mp4
+- apresentacao.webm (opcional, mas recomendado para compatibilidade)
+
+Referenciado em index.html através da tag <video>.

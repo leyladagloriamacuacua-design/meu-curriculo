@@ -1,0 +1,161 @@
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre &amp; Currículo — Leyla da Glória Macuácua</title>
+  <meta name="description" content="Formação académica, experiência e competências técnicas de Leyla da Glória Macuácua.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <a href="#conteudo" class="saltar-link">Saltar para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <p class="logotipo">leyla_macuacua<span>.dev</span></p>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li><a href="index.html">index.html</a></li>
+          <li><a href="about.html" class="activo" aria-current="page">about.html</a></li>
+          <li><a href="portfolio.html">portfolio.html</a></li>
+          <li><a href="hobbies.html">hobbies.html</a></li>
+          <li><a href="contact.html">contact.html</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="seccao container">
+      <span class="rotulo-comentario">// sobre mim</span>
+      <h1>Currículo</h1>
+      <p>Uma visão geral da minha formação académica, experiência e competências técnicas.</p>
+    </section>
+
+    <!-- ================= FORMAÇÃO ACADÉMICA ================= -->
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <span class="rotulo-comentario">/* formação académica */</span>
+        <h2>Formação académica</h2>
+        <ol>
+          <li>
+            <strong>Licenciatura em Informática</strong> &mdash; Universidade Licungo, Moçambique
+            <br><small class="ajuda">2025 &ndash; presente (2º ano)</small>
+          </li>
+          <li>
+            <strong>Ensino Secundário Geral (12ª classe)</strong> &mdash; Escola Secundária de Matadouro
+            <br><small class="ajuda">Concluído em 2024</small>
+          </li>
+        </ol>
+
+        <h3>Certificados</h3>
+        <p>
+          <em>Ainda não tenho certificados adicionais para mostrar aqui. Assim que concluir algum
+          curso ou formação, poderei adicionar a fotografia do certificado dentro de um bloco
+          <code>&lt;figure&gt;</code>/<code>&lt;figcaption&gt;</code>, tal como já está preparado
+          na pasta <code>assets/img/</code>.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIÊNCIA ================= -->
+    <section class="seccao">
+      <div class="container">
+        <span class="rotulo-comentario">/* experiência */</span>
+        <h2>Experiência</h2>
+        <ul>
+          <li><strong>Pequeno negócio de encomendas de salgados</strong> &mdash; produção e venda de salgados por encomenda, com gestão de pedidos e atendimento a clientes.</li>
+          <li><strong>Criação de conteúdo digital</strong> &mdash; produção de vídeos para o TikTok e fotografia, incluindo planeamento, edição e publicação.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= COMPETÊNCIAS TÉCNICAS (TABELA) ================= -->
+    <section class="seccao seccao--alt">
+      <div class="container">
+        <span class="rotulo-comentario">/* competências técnicas */</span>
+        <h2>Nível de proficiência em tecnologias</h2>
+
+        <table class="tabela-competencias">
+          <caption>Autoavaliação do nível de utilização de cada tecnologia (escala 0&ndash;100%)</caption>
+          <thead>
+            <tr>
+              <th scope="col" colspan="2">Categoria / Tecnologia</th>
+              <th scope="col">Nível</th>
+              <th scope="col">Anos de uso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="3">Frontend</th>
+              <th scope="row">HTML5</th>
+              <td><span class="nivel" style="--valor: 90%;" role="img" aria-label="90 por cento"></span></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">CSS3</th>
+              <td><span class="nivel" style="--valor: 85%;" role="img" aria-label="85 por cento"></span></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">JavaScript</th>
+              <td><span class="nivel" style="--valor: 55%;" role="img" aria-label="55 por cento"></span></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="2">Backend</th>
+              <th scope="row">PHP</th>
+              <td><span class="nivel" style="--valor: 45%;" role="img" aria-label="45 por cento"></span></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">MySQL</th>
+              <td><span class="nivel" style="--valor: 50%;" role="img" aria-label="50 por cento"></span></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="2">Ferramentas</th>
+              <th scope="row">Git &amp; GitHub</th>
+              <td><span class="nivel" style="--valor: 70%;" role="img" aria-label="70 por cento"></span></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">VS Code</th>
+              <td><span class="nivel" style="--valor: 88%;" role="img" aria-label="88 por cento"></span></td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><a href="assets/ficheiros/cv.pdf" class="botao botao--secundario" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Descarregar CV em PDF</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <address style="font-style: normal;">
+        <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> leyladagloriamacuacua@gmail.com</p>
+        <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +258 84 724 3782 / 87 872 4378</p>
+      </address>
+      <ul class="rodape__redes">
+        <li><a href="https://github.com/leyladagloriamacuacua-design" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="rodape__assinatura">Desenvolvido por Leyla da Glória Macuácua &mdash; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
