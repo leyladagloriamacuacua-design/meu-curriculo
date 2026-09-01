@@ -1,4 +1,6 @@
-# Site de Currículo Pessoal — Leyla da Glória Macuácua
+#Site de Curriculo Pessoal-Leyla da Glória Macuácua
+
+**Site publicado:** https://leyladagloriamacuacua-design.github.io/meu-curriculo/
 
 **Estudante:** Leyla da Glória Macuácua
 **Turma:** 2º Ano — Licenciatura em Informática — Programação de Design Web
