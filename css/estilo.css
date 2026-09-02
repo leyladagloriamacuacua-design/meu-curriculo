@@ -56,8 +56,6 @@
 }
 
 html {
-  /* 1rem = 16px por defeito; usar rem permite escalar tudo se o utilizador
-     mudar o tamanho de fonte do navegador (acessibilidade). */
   scroll-behavior: smooth;
 }
 
@@ -67,7 +65,7 @@ body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   line-height: 1.65;
-  font-size: 1rem; /* mobile-first: base pensada para ecrã pequeno */
+  font-size: 1rem;
 }
 
 img {
@@ -101,7 +99,6 @@ p { margin: 0 0 var(--esp-md) 0; }
   padding-inline: var(--esp-md);
 }
 
-/* Acessibilidade: link para saltar para o conteúdo principal */
 .saltar-link {
   position: absolute;
   left: -999px;
@@ -116,7 +113,6 @@ p { margin: 0 0 var(--esp-md) 0; }
   left: 0;
 }
 
-/* Foco visível em todos os elementos interativos (acessibilidade) */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -148,7 +144,7 @@ summary:focus-visible {
    4. CABEÇALHO E NAVEGAÇÃO (estilo "abas de editor de código")
    ------------------------------------------------------------------------- */
 .cabecalho {
-  position: sticky; /* ver nota acima sobre position */
+  position: sticky;
   top: 0;
   z-index: 100;
   background: rgba(15, 27, 38, 0.92);
@@ -173,8 +169,6 @@ summary:focus-visible {
   color: var(--cor-texto-suave);
 }
 
-/* Menu "hamburger" só-CSS: checkbox escondido + label como botão.
-   Interatividade conseguida apenas com HTML/CSS (:checked). */
 .nav-toggle {
   position: absolute;
   opacity: 0;
@@ -220,8 +214,6 @@ summary:focus-visible {
   flex-direction: column;
 }
 
-/* Cada link do menu simula uma "aba" do editor com o nome real do
-   ficheiro .html — reforça a identidade "informático" do site. */
 .nav-principal__lista a {
   display: flex;
   align-items: center;
@@ -242,6 +234,22 @@ summary:focus-visible {
 .nav-principal__lista a:hover,
 .nav-principal__lista a:focus-visible {
   color: #fff;
+}
+
+/* Seletor de filho direto (>): aplica-se apenas aos <li> que são filhos
+   imediatos da lista do menu, não a <li> aninhados mais fundo (ex: caso
+   exista um submenu no futuro, este espaçamento não se propagaria a ele). */
+.nav-principal__lista > li {
+  margin-bottom: 2px;
+}
+
+/* :first-child e :last-child: remove o espaço extra no primeiro e no
+   último item do menu, para o alinhamento ficar mais limpo nas pontas. */
+.nav-principal__lista > li:first-child {
+  margin-top: 0;
+}
+.nav-principal__lista > li:last-child {
+  margin-bottom: 0;
 }
 
 /* Página atual destacada com classe .activo (ver secção 3 do enunciado) */
@@ -297,8 +305,6 @@ summary:focus-visible {
   background: var(--cor-fundo-alt);
 }
 
-/* Rótulo "comentário de código" usado como "eyebrow" acima dos títulos
-   de secção — reforça a estrutura de "ficheiro fonte" do site. */
 .rotulo-comentario {
   display: block;
   font-family: var(--fonte-mono);
@@ -316,7 +322,7 @@ summary:focus-visible {
   border-radius: var(--raio);
   overflow: hidden;
   transition: transform var(--transicao-rapida), border-color var(--transicao-rapida);
-  position: relative; /* contexto para o ::after decorativo abaixo */
+  position: relative;
 }
 
 .cartao:hover,
@@ -325,7 +331,6 @@ summary:focus-visible {
   border-color: var(--cor-secundaria);
 }
 
-/* Pseudo-elemento decorativo: barra de destaque no topo do cartão */
 .cartao::before {
   content: "";
   position: absolute;
@@ -385,18 +390,14 @@ summary:focus-visible {
   font-family: var(--fonte-mono);
 }
 
-/* Seletor de irmão adjacente: alterna o fundo das linhas do corpo da
-   tabela para melhorar a leitura (efeito "zebra"). */
 .tabela-competencias tbody tr + tr {
   border-top: 1px solid var(--cor-borda);
 }
 
-/* nth-child: realça linhas pares */
 .tabela-competencias tbody tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.02);
 }
 
-/* Barra de nível de proficiência feita só com CSS (::after como "trilho") */
 .nivel {
   position: relative;
   display: inline-block;
@@ -419,7 +420,7 @@ summary:focus-visible {
    ------------------------------------------------------------------------- */
 .flex-linha {
   display: flex;
-  flex-direction: column;   /* mobile-first: empilhado */
+  flex-direction: column;
   flex-wrap: wrap;
   gap: var(--esp-md);
   justify-content: flex-start;
@@ -490,8 +491,6 @@ legend {
   color: var(--cor-texto-suave);
 }
 
-/* Seletor de atributo: aplica-se apenas a inputs de texto/email/etc,
-   nunca a checkboxes/radios (que têm o seu próprio estilo mais abaixo). */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -522,9 +521,6 @@ textarea:focus {
   border-color: var(--cor-secundaria);
 }
 
-/* Validação nativa: destaca em vermelho suave apenas depois de o
-   utilizador interagir e o valor ser inválido (evita mostrar erro logo
-   no carregamento da página). */
 input:not(:placeholder-shown):invalid,
 textarea:not(:placeholder-shown):invalid {
   border-color: var(--cor-erro);
@@ -537,8 +533,6 @@ small.ajuda {
   margin-top: var(--esp-xs);
 }
 
-/* Radios e checkboxes com aparência personalizada (não a padrão do
-   navegador), construídos com o seletor irmão adjacente + :checked. */
 .opcao {
   display: flex;
   align-items: center;
@@ -645,7 +639,6 @@ small.ajuda {
 .animar-surgir {
   animation: surgir 700ms ease-out both;
 }
-/* Pequenos desfasamentos para um efeito escalonado, sem exagerar */
 .animar-surgir:nth-of-type(2) { animation-delay: 120ms; }
 .animar-surgir:nth-of-type(3) { animation-delay: 240ms; }
 
